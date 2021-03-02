@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Questions 4 (Homework part 2) Answers</title>
+</head>
+<h1>Homework Questions 4 (Homework part 2) Answers</h1>
+
+<body>
+    <p>
+    1- The HTML5 specification introduced several semantic sectioning elements to help organize the structure of documents. </p>
+    2- Semantic sectioning elements are specifically designed to communicate structural meaning to browsers and other technologies interpreting the document on behalf of users, such as screen readers and voice assistants.</p>
+    3- Semantic sectioning elements clarify the larger-scale structures within a document. They are intended to enhance the limited semantics of earlier versions of HTML, which included only the div element as a generic mechanism for grouping related content.Examples of non-semantic elements:<div> and <span> - Tells nothing about its content. Examples of semantic elements: <form> , <table> , and <article> - Clearly defines its content. </p>
+    4- <form> , <table> , and <article> </p>
+    5- nav element, article element, section element and aside element. </p>
+    6- nav element defines a section that contains navigation links that usually appear on a site. There can be primary and secondary menus, but a nav element cannot be nested inside another nav element. </p>
+   <nav>
+   <ul>
+   <li><a href="/">Home</a></li>
+   <li><a href="/events">Current Events</a></li> </p>
+    7- Article element defines a piece of self-contained content. It does not only refer to the main content, and can be used for comments and widgets as well, which could theoretically be distributed to other websites and platforms as a stand-alone unit. </p>
+    <article is="stock-widget">
+    <h1>Stocks</h1>
+    <table>
+    <thead> <tr> <th> Stock <th> Value <th> Delta
+    <tbody> <template> <tr> <td> <td> <td> </template>
+    </table>  
+    <input type=button value="Refresh" onclick="this.parentElement.refresh()">
+    </article>
+    <article is="news-widget"> </p>
+    8- Section element defines a section of a document to indicate a related grouping of semantic meaning. It makes sense to use the section element to provide extra context for the parent element.</p>
+    <article>
+    <hgroup>
+    <h1>Apples</h1>
+    <h2>Tasty, delicious fruit!</h2>
+    </hgroup>
+    <p>The apple is the pomaceous fruit of the apple tree.</p>
+    <section> </p>
+    9- An outline in HTML5 shows the structure of the content on the page. This is useful for user agents, who can use the outline to create, for example, a table of contents for the document. This can then be used by screen readers to help people better navigate the page.</p>
+    10- aside element (aka HTML aside element): defines a section that, though related to the main element (content), does not belong to the main flow, i.e., an explanation/description box or an advertisement. The aside element has its own outline, and doesn't belong to the main one.</p>
+    <aside>
+    <h1>Switzerland</h1>
+    <p>Switzerland, a land-locked country in the middle of geographic
+       Europe, has not joined the geopolitical European Union, though it is
+       a signatory to a number of European treaties.</p>
+    </aside> </p>
+    11- body element, header element, footer element </p>
+    12- body element defines the content of a document. It contains all the content (what is between the tags) and HTML tags (elements).</p>
+    13- Header element defines a page area that typically contains a logo, title, and navigation. A header typically contains a group of introductory or navigational aids.</p>
+    <header>
+    <p>Welcome to...</p>
+    <h1>Voidwars!</h1>
+    </header> </p>
+    14- The header can also be used inside other semantic elements such as article or section. A section header might contain the section's heading, author name, etc. article, section, aside, and nav can have their own header.</p>
+    15- Despite the name, the header is not necessarily positioned at the beginning of a page or section.</p>
+    16- footer element defines a page footer, which typically contains copyright or legal notices, and sometimes some links. </p>
+    <footer><a href="../">Back to index...</a></footer>
+    <hgroup>
+    <h1>Lorem ipsum</h1>
+    <h2>The ipsum of all lorems</h2>
+    </hgroup>
+    <p>A dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <footer><a href="../">Back to index...</a></footer> </p>
+    17- HTML Navigational Element </p>
+    18- The nav element indicates a navigation block and should be used for major navigational menus (i.e., major sections (pages) of a web site).</p>
+    <nav>
+    <ul>
+    <li>
+    <a href="index.html">Home</a>
+    </li>
+    <li>
+    <a href="portfolio.html">Portfolio</a>
+    </li>
+    <li>
+    <a href="resume.html">Résumé</a>
+    </li>
+    <li>
+    <a href="about.html">About</a>
+    </li>
+    <li>
+    <a href="contact.html">Contact</a>
+    </li>
+    </ul>
+    </nav> </p>
+    19- A ul element is nested inside a nav element so it can provide structure to the li elements which contain the links to pages on a web site.</p>
+    20- If no list-style-type property is applied to the ul element, the user-agent selects a bullet type depending on the nesting level of the li (list item) element.</p>
+    21- The <ul> element is for grouping a collection of items that do not have a numerical ordering, and their order in the list is meaningless. </p>
+    <ul>
+    <li>Milk</li>
+    <li>Cheese
+    <ul>
+    <li>Blue cheese</li>
+    <li>Feta</li>
+    </ul>
+    </li>
+    </ul> </p>
+    22-li element: is used to represent an item in a list. It must be contained in a parent element: an ordered list (ol), or an unordered list (ul). In unordered lists, list items are usually displayed using bullet points. The element's value IDL attribute does not directly correspond to its ordinal value; it simply reflects the content attribute. For example, given this list:</p>
+    <ol>
+    <li>Item 1
+    <li value="3">Item 3
+    <li>Item 4
+    </ol> </p>
+    23- Each li element contains an a element between its opening and closing tag. a element: with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address. Content within each a element should indicate the link's destination.
+    24- An anchor is used to define the beginning and end of a hypertext link,  a element has an href attribute, then it represents a hyperlink.</p>
+    <nav>
+    <ul>
+    <li> <a href="/">Home</a> </li>
+    <li> <a href="/news">News</a> </li>
+    <li> <a>Examples</a> </li>
+    <li> <a href="/legal">Legal</a> </li>
+    </ul>
+    </nav> </p>
+    25- Content sectioning elements allow you to organize the document content into logical pieces. Use the sectioning elements to create a broad outline for your page content, including header and footer navigation, and heading elements to identify sections of content.</p>
+    26- href: indicates (and contains) the URL that the hyperlink points to. Links are not restricted to HTTP-based URLs.</p>
+    27- we have been styling our HTML document mostly using the internal style approach, which consists of placing CSS within the style element located in the head element of the document. <link rel="stylesheet" href="main.css">
+    This link element/tag can be placed right under the title element located in the head element of the HTML document. Having an external style sheet also makes adding changes to the CSS much easier to track and manage!
+    The rel attribute of the external resource link element is used to define the type of content the link element is linking to. So a value of "stylesheet" indicates that the link element is linking to an external stylesheet.
+    The href attribute of the link element specifies the location of the linked document.</p>
+</body>
+</html>
+
