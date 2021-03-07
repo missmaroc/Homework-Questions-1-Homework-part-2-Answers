@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <h1>Homework Questions 5 (Homework part 2) Answers</h1>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+  
+  <p> 1- The CSS Box Model is basically a box that wraps around every HTML element. It consists of margins, borders, padding, and actual content. The CSS Box Model consists of: 
+   Content: The content of the box, where text and images appear.
+   Padding: Clears an area around the content. The padding is transparent.
+   Border:  A border that goes around the padding and content.
+   Margin:  Clears an area outside the border. The margin is transparent.
+   The CSS Box Model also appears in Chrome Developer Tools when we visit the Elements tab to view our live HTML markup.</p>
+  <p> 2- When you set the width and height properties of an element with CSS, you just set the width and height of the content area. </p>
+  <p> 3- We need to know how the box model works </p>
+  <p> 4- Calculate the full size of an element </p>
+  <p> 5- 545px (width)
+      12px (left and right border)
+      35px (left and right padding)
+      25px (left and right margin)
+      = 617px </p>
+  <p> 6- 545px (height)
+      12px (top and bottom border)
+      35px (top and bottom padding)
+      25px (top and bottom margin)
+      = 617px </p>
+  <p> 7- The CSS box-sizing property allows us to include the padding and border in an element's total width and height. It defines how the width and height of an element are calculated. </p>
+  <p> 8- Content-box: The default value. The width and height properties (and min/max properties) includes only the content. Border  and padding are not included.
+      Initial: Sets the box-sizing property to its default value. The initial keyword is used to set a CSS property to its default value. The initial keyword can be used for any CSS property on any HTML element.
+      Inherit: Inherits the box-sizing property from its parent element. The inherit keyword specifies that a property should inherit its value from its parent element. The inherit keyword can be used for any CSS property on any HTML element. </p>
+  <p> 9- By adding the property declaration box-sizing: border-box; to the universal selector rule set, all elements on the page are targeted, and padding and border are included in all their widths and heights. </p>
+  <p> 10- Width + padding + border = actual width of an element
+       Height + padding + border = actual height of an element
+       This means that when you set the width/height of an element, the element often appears bigger than you have set because the element's border and padding are added to the element's specified width/height.</p>
+  <p> 11- By adding the property declaration box-sizing: border-box; to the universal selector rule set, all elements on the page are targeted, and padding and border are included in all their widths and heights. </p>
+  <p> 12- The CSS box model is essentially a box that wraps around every HTML element.
+   * {
+    padding: 0; The CSS padding properties are used to generate space around an element's content, inside of any defined borders.
+    margin: 0; The CSS margin properties are used to create space around elements, outside of any defined borders.
+    box-sizing: border-box; The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
+    }  </p>
+  <p> 13- Flow Layout, aka Normal Flow, is the way that Block and Inline elements are displayed on a page before any changes are made to their layout.  The flow is essentially a set of things that are all working together and know about each other in a layout. </p>
+  <p> 14- When taking an item out of flow with positioning, you will need to manage the possibility of content overlapping. Out of flow essentially means that the other elements on your page no longer know that element exists so will not respond to it. </p>
+  <p> 15- The CSS position property is one way that an element's default position can be over-ridden, thereby removing the element from the normal flow of the document. The CSS position property specifies the type of positioning method used for an element. </p>
+  <p> 16- Static: Elements render in order, as they appear in the document flow. Static postioned elements are NOT affected by the top, bottom, left, and right properties. An element with position: static; is not positioned in any special way. It is always positioned according to the normal flow of the page.
+    div.static {
+    position: static;
+    border: 3px solid #73AD21;
+    }
+     - Absolute: The element is positioned relative to its nearest positioned (not static) ancestor element (instead of positioned relative to the viewport, like fixed). If an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+     div.absolute {
+     position: absolute;
+     top: 80px;
+     right: 0;
+     width: 200px;
+     height: 100px;
+     border: 3px solid #73AD21;
+     }
+     - Fixed: The element is positioned relative to the viewport (browser window). This means that it always stays in the same place, even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+     div.fixed {
+     position: fixed;
+     bottom: 0;
+     right: 0;
+     width: 300px;
+     border: 3px solid #73AD21;
+     }
+     - Relative: The element is positioned relative to its normal position, so left: 25px adds 25px to the element's LEFT position.
+     div.relative {
+     position: relative;
+     left: 30px;
+     border: 3px solid #73AD21;
+     }
+     - sticky: The element is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position: fixed).
+     div.sticky {
+     position: -webkit-sticky; /* Safari */
+     position: sticky;
+     top: 0;
+     background-color: green;
+     border: 2px solid #4CAF50;
+     }#9fdaf8  </p>
+    <p> 17- Bottom: Sets the bottom margin edge for a positioned box.
+       - Clip: Clips an absolutely positioned element.
+       - Left: Sets the left margin edge for a positioned box.
+       - Position: Specifies the type of positioning for an element.
+       - Right: Sets the right margin edge for a positioned box.
+       - Top: Sets the top margin edge for a positioned box.</p>
+    <p> 18- The z-index property specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order. The z-index property only works on elements which are explicitly positioned:
+       - position: absolute;
+       - position: relative;
+       - position: fixed;
+       - position: sticky; </p>
+    <p> 19- When elements are positioned, they can overlap with other elements. The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others). An element can have a positive (towards the top of the stack order) or negative stack order (towards the bottom of the stack order). </p>
+    <p> 20- A fixed design is one that has a specific width and does not scale to fit the browser window. Fixed width sites can be aligned to the left, centred or occasionally aligned to the right.
+     .content { width: 960px; }
+     .left, .right { width: 180px; }
+     .middle { width: 600px; }
+       - A fluid design (also referred to as a fluid or dynamic design) fills the entire browser window by using percentages rather than pixel values to define the width.
+     .content { width: 80%; }
+     .left, .right { width: 18%; }
+     .middle { width: 64%; } </p>
+
+
+
+
+
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <script src=""></script>
+</body>
+</html>
